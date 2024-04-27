@@ -18,7 +18,7 @@ stages:
        jobs:
        - job: BuildJob
        pool:
-          vmImage: ${LinuxVMName}
+          vmImage: ${LinuxVM}
           steps:
           - task: UseDotNet@2
             displayName: 'Use .NET Core 6'
