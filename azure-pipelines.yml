@@ -58,7 +58,7 @@ stages:
        jobs:
        - job: Deploy
        pool:
-          vmImage: ${WindowsVMName}
+          vmImage: ${WindowsVM}
           steps:
           - task: DownloadBuildArtifacts@0
             inputs:
